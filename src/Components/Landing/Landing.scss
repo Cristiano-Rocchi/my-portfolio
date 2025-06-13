@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.landing img {
+  max-width: 500px;
+  margin: auto;
+}
+
+//Card
+.card-landing {
+  background-color: $tertiary;
+  border-radius: 10px;
+  color: $primary;
+}
+
+//Carousel
+.my-swiper {
+  color: white;
+}
