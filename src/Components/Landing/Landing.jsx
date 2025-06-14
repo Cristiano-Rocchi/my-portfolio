@@ -37,6 +37,7 @@ import Figma from "../../Assets/Img/Loghi/figma.png";
 import In from "../../Assets/Svg/in.svg";
 import Phone from "../../Assets/Svg/phone.svg";
 import Arrow from "../../Assets/Svg/arrow.svg";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -59,18 +60,20 @@ const Landing = () => {
               md={4}
               className="d-flex flex-column justify-content-end gap-4"
             >
-              <div className="card-landing p-3">
-                <div className="d-flex justify-content-between mb-2">
-                  <h5 className="fw-bold">SITI CHE GESTISCO</h5>{" "}
-                  <div>
-                    <img src={Arrow} alt="" />
+              <Link to={"/websites"}>
+                <div className="card-landing p-3">
+                  <div className="d-flex justify-content-between mb-2">
+                    <h5 className="fw-bold">SITI CHE GESTISCO</h5>{" "}
+                    <div>
+                      <img src={Arrow} alt="" />
+                    </div>
                   </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus officia pariatur quam architecto obcaecati
+                  </p>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  officia pariatur quam architecto obcaecati
-                </p>
-              </div>
+              </Link>
               <div className="card-landing p-3 mb-3">
                 {" "}
                 <div className="d-flex justify-content-between mb-2">

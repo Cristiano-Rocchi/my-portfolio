@@ -1,0 +1,40 @@
+@import "../../App.scss";
+.websites {
+  height: 90vh;
+}
+// Titles
+.websites .titles img {
+  max-width: 350px;
+}
+.websites .titles {
+  color: $primary;
+}
+.websites .titles p {
+  max-width: 300px;
+}
+
+//card
+.websites .card-site {
+  width: 30%;
+  position: relative;
+}
+.websites .card-site img {
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(0.7);
+}
+.websites .card-site .info {
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+}
+.websites .card-site .info p {
+  color: $primary;
+  background-color: #ffe8e865;
+  border-radius: 30px;
+  padding: 3px 10px;
+}
+.websites .card-site button {
+  background-color: $primary;
+  border-color: $primary;
+}

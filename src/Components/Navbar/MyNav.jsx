@@ -1,5 +1,6 @@
 import React from "react";
 import "./MyNav.scss";
+import { Link } from "react-router-dom";
 const MyNav = () => {
   return (
     <>
@@ -8,7 +9,9 @@ const MyNav = () => {
           <h6>My Portfolio</h6>
         </div>
         <div>
-          <h3>Cristiano Rocchi</h3>
+          <Link to="/">
+            <h3>Cristiano Rocchi</h3>
+          </Link>
         </div>
         <div>
           <h6>Fullstack Developer</h6>
