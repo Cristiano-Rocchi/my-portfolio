@@ -42,9 +42,9 @@ import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <>
-      <div className="body">
+      <div className="body landing">
         {/*----- PRIMA PARTE ------*/}
-        <Container fluid className="landing">
+        <Container fluid>
           <Row>
             <Col
               xs={12}

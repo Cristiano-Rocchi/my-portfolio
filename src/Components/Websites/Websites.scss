@@ -15,13 +15,22 @@
 
 //card
 .websites .card-site {
-  width: 30%;
+  width: 450px;
+  height: 250px;
   position: relative;
+}
+.websites a:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 .websites .card-site img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
   filter: brightness(0.7);
+  transition: all 0.5s ease;
 }
 .websites .card-site .info {
   position: absolute;
@@ -30,11 +39,52 @@
 }
 .websites .card-site .info p {
   color: $primary;
-  background-color: #ffe8e865;
+  background-color: $secondary;
+
   border-radius: 30px;
   padding: 3px 10px;
+  box-shadow: 0px 0px 16px 13px $secondary;
+}
+.websites .card-site h5 {
+  position: absolute;
+  color: $tertiary;
+  top: 40%;
+  left: 35%;
+  font-weight: bold;
+  opacity: 0;
+}
+.websites .card-site:hover h5 {
+  opacity: unset;
+  transition: opacity 2s ease;
+}
+.websites .card-site:hover img {
+  filter: brightness(0.3);
 }
 .websites .card-site button {
   background-color: $primary;
   border-color: $primary;
+  border-radius: 30px;
+  transition: padding-inline 0.7s, background-color 1.5s, border-color 0.3s,
+    transform 0.3s;
+}
+.websites .card-site button:hover {
+  transform: scale(1.1);
+  padding-inline: 25px;
+  color: $secondary;
+  background-color: $tertiary;
+  border-color: $secondary;
+}
+.websites .unactive img {
+  filter: brightness(0.3) !important;
+}
+.websites .unactive button {
+  display: none !important;
+}
+.websites .unactive h5 {
+  color: $tertiary !important;
+  position: absolute !important;
+  top: 40% !important;
+  left: 40% !important;
+  opacity: unset !important;
+  color: red !important;
 }
