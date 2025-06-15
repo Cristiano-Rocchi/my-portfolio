@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "./Components/Navbar/MyNav";
 import Landing from "./Components/Landing/Landing";
 import Websites from "./Components/Websites/Websites";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/websites" element={<Websites />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );

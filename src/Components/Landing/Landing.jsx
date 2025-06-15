@@ -74,19 +74,21 @@ const Landing = () => {
                   </p>
                 </div>
               </Link>
-              <div className="card-landing p-3 mb-3">
-                {" "}
-                <div className="d-flex justify-content-between mb-2">
-                  <h5 className="fw-bold">I MIEI PROGETTI</h5>{" "}
-                  <div>
-                    <img src={Arrow} alt="" />
+              <Link to={"/projects"}>
+                <div className="card-landing p-3 mb-3">
+                  {" "}
+                  <div className="d-flex justify-content-between mb-2">
+                    <h5 className="fw-bold">I MIEI PROGETTI</h5>{" "}
+                    <div>
+                      <img src={Arrow} alt="" />
+                    </div>
                   </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus officia pariatur quam architecto obcaecati
+                  </p>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  officia pariatur quam architecto obcaecati
-                </p>
-              </div>
+              </Link>
             </Col>
           </Row>
           {/* -----CAROSELLO------ */}
