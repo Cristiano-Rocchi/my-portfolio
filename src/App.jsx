@@ -5,6 +5,7 @@ import MyNav from "./Components/Navbar/MyNav";
 import Landing from "./Components/Landing/Landing";
 import Websites from "./Components/Websites/Websites";
 import Projects from "./Components/Projects/Projects";
+import ProjectDetail from "./Components/ProjectsDetails/ProjectDetail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/websites" element={<Websites />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
     </BrowserRouter>
   );
