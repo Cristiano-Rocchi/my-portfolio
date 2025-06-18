@@ -1,9 +1,17 @@
 @import "./Style/Variables.scss";
 
+//GLOBAL
 .body {
   background-color: $secondary;
+  font-family: "Bricolage";
 }
 a {
   text-decoration: none;
   color: unset;
+}
+
+//FONT
+@font-face {
+  font-family: "Bricolage";
+  src: url("./Assets/Font/BricolageGrotesque.ttf") format("truetype");
 }

@@ -63,7 +63,7 @@ const Landing = () => {
               <Link to={"/websites"}>
                 <div className="card-landing p-3">
                   <div className="d-flex justify-content-between mb-2">
-                    <h5 className="fw-bold">SITI CHE GESTISCO</h5>{" "}
+                    <h4 className="fw-bold">SITI CHE GESTISCO</h4>{" "}
                     <div>
                       <img src={Arrow} alt="" />
                     </div>
@@ -78,7 +78,7 @@ const Landing = () => {
                 <div className="card-landing p-3 mb-3">
                   {" "}
                   <div className="d-flex justify-content-between mb-2">
-                    <h5 className="fw-bold">I MIEI PROGETTI</h5>{" "}
+                    <h4 className="fw-bold">I MIEI PROGETTI</h4>{" "}
                     <div>
                       <img src={Arrow} alt="" />
                     </div>

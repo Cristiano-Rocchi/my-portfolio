@@ -18,13 +18,43 @@
 
 //Cover
 .project-detail .cover img {
-  width: 90%;
-
-  border-radius: 20px;
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  filter: brightness(0.9);
 }
 
 //project-img
 .project-detail .project-card img {
-  width: 300px;
+  width: 400px;
   height: 200px;
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+.zoom-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.zoom-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-size 0.3s ease;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  opacity: 0; // nasconde l'immagine visiva, mostra solo lo sfondo zoomato
+  cursor: zoom-in; // lente classica
+}
+
+.zoom-container:hover .main-image {
+  opacity: 0; // garantisce che l'immagine sotto non venga mostrata
 }
