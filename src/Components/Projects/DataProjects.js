@@ -176,15 +176,7 @@ const DataProjects = [
     img1: gestionePrenotazione1,
     img2: gestionePrenotazione2,
   },
-  //----CATALOGO BIVLIOTECA-----
-  {
-    id: "CatalogoBiblioteca",
-    titolo: "Catalogo Biblioteca",
-    descrizioneBreve:
-      "Applicazione Java con JPA e PostgreSQL per la gestione di un catalogo bibliografico. Permette operazioni CRUD su libri, riviste, utenti e prestiti, con funzionalità di ricerca avanzata e logiche automatiche per la gestione delle scadenze. Struttura dati modellata secondo un diagramma ER.",
-    descrizioneLunga:
-      "Catalogo Bibliografico con JPA è un'applicazione backend sviluppata individualmente in Java, utilizzando Spring Data JPA e PostgreSQL per la gestione di una libreria con supporto al prestito degli elementi bibliografici. L’architettura del progetto si basa su un diagramma ER, con entità ben separate: Libri e riviste con attributi condivisi (ISBN, titolo, anno, numero pagine) e distintivi (autore e genere per i libri, periodicità per le riviste); Utente identificato da nome, cognome, data di nascita e numero di tessera; Prestito con gestione delle date di inizio, restituzione prevista (calcolata automaticamente a +30 giorni) e restituzione effettiva. Funzionalità implementate: CRUD completo sugli elementi del catalogo; Ricerca per ISBN, autore, anno di pubblicazione, titolo (parziale incluso); Visualizzazione di tutti i prestiti correnti per un utente o di quelli scaduti/non restituiti; Controlli automatici sulla validità dei prestiti e gestione dei vincoli tramite logica applicativa; Database relazionale normalizzato con mapping JPA tra entità e repository. Il progetto si focalizza su progettazione dati, logica transazionale e ottimizzazione delle query di ricerca.",
-  },
+
   //-----APP METEO---
   {
     id: "AppMeteo",

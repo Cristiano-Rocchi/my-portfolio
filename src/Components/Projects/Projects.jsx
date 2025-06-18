@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.scss";
 import { Col, Container, Row } from "react-bootstrap";
-import Keyboard from "../../Assets/Svg/Keyboard.svg";
+import Pencil from "../../Assets/Svg/Pencil.svg";
 import DataProjects from "./DataProjects";
-import { Link } from "react-router-dom"; // ✅ Importa Link
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const firstTwo = DataProjects.slice(0, 2);
@@ -22,7 +22,7 @@ const Projects = () => {
                 </h1>
               </div>
               <div className="w-50">
-                <img className="w-100" src={Keyboard} alt="" />
+                <img className="w-100" src={Pencil} alt="" />
               </div>
             </div>
           </Col>
@@ -50,7 +50,7 @@ const Projects = () => {
         {/* Seconda riga */}
         <Row>
           <Col xs={12}>
-            <div className="d-flex  gap-4 mb-5 flex-wrap">
+            <div className="d-flex justify-content-center gap-4 mb-5 flex-wrap">
               {remainingProjects.map((project) => (
                 <Link
                   to={`/projects/${project.id}`}

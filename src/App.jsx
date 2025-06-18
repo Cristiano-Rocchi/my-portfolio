@@ -6,6 +6,7 @@ import Landing from "./Components/Landing/Landing";
 import Websites from "./Components/Websites/Websites";
 import Projects from "./Components/Projects/Projects";
 import ProjectDetail from "./Components/ProjectsDetails/ProjectDetail";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/websites" element={<Websites />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/aboutme" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

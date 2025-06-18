@@ -2,7 +2,7 @@ import React from "react";
 import "./Landing.scss";
 import "../../App.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import HomeImg from "../../Assets/Img/Home/landing-img.png";
+import HomeImg from "../../Assets/Svg/Landing-img.svg";
 import ContactImg from "../../Assets/Img/Home/contactImg.png";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -207,21 +207,22 @@ const Landing = () => {
             </Col>
             {/* -----ABOUT ME------ */}
             <Col xs={12} md={4}>
-              {" "}
-              <div className="about-card p-3">
-                <div className="d-flex justify-content-between">
-                  <h4 className="fw-bold mb-2">ABOUT ME</h4>{" "}
-                  <div>
-                    <img src={Arrow} alt="" />
+              <Link to={"/aboutme"}>
+                <div className="about-card p-3">
+                  <div className="d-flex justify-content-between">
+                    <h4 className="fw-bold mb-2">ABOUT ME</h4>{" "}
+                    <div>
+                      <img src={Arrow} alt="" />
+                    </div>
                   </div>
-                </div>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  officia pariatur quam architecto obcaecati, cumque
-                  voluptatibus,
-                </p>
-              </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus officia pariatur quam architecto obcaecati, cumque
+                    voluptatibus,
+                  </p>
+                </div>
+              </Link>
             </Col>
           </Row>
         </Container>
