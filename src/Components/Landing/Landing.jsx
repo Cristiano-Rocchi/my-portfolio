@@ -191,12 +191,24 @@ const Landing = () => {
                   <div>
                     <h4 className="fw-bold mb-4">CONTATTI</h4>
                     <div className="d-flex gap-4">
-                      <Button>
-                        Posta Elettronica
-                        <img className="ms-2 mb-1" src={Arrow} alt="" />
-                      </Button>
-                      <img className="ms-3" src={In} alt="Linkedin" />
-                      <img src={Phone} alt="Phone" />
+                      <a href="mailto:cri.wklavoro@libero.it">
+                        <Button>
+                          Posta Elettronica
+                          <img className="ms-2 mb-1" src={Arrow} alt="" />
+                        </Button>
+                      </a>
+
+                      <a
+                        href="https://www.linkedin.com/in/cristiano-rocchi-83bb1032a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img className="ms-3" src={In} alt="Linkedin" />
+                      </a>
+
+                      <a href="tel:3515630200">
+                        <img src={Phone} alt="Phone" />
+                      </a>
                     </div>
                   </div>
                   <div className="me-5">

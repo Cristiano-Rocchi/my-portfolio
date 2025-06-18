@@ -4,6 +4,7 @@ import DataProjects from "../Projects/DataProjects";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./ProjectDetail.scss";
 import Mouse from "../../Assets/Svg/mouse.svg";
+import { motion } from "framer-motion";
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -45,7 +46,17 @@ function ProjectDetail() {
               </div>
             </Col>
             <Col xs={12} md={7}>
-              <div className="d-flex justify-content-end cover">
+              <motion.div
+                className="d-flex justify-content-end cover"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 90,
+                  damping: 7,
+                  duration: 0.8,
+                }}
+              >
                 <img
                   src={copertina}
                   alt=""
@@ -57,32 +68,51 @@ function ProjectDetail() {
                     }
                   }}
                 />
-              </div>
+              </motion.div>
+
               <div className="border-bottom border-2 border-danger mt-3"></div>
             </Col>
           </Row>
           <Row>
             <Col xs={12} md={5}>
               <div className="description">
-                <p style={{ whiteSpace: "pre-line" }}>
-                  {project.descrizioneLunga}
-                </p>
+                <div
+                  style={{ whiteSpace: "normal" }}
+                  dangerouslySetInnerHTML={{ __html: project.descrizioneLunga }}
+                ></div>
               </div>
             </Col>
             <Col md={7}>
               <div className="d-flex justify-content-end mt-5">
-                <div
+                <motion.div
                   className="project-card w-50"
                   onClick={() => handleSwap(img1, setImg1)}
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 90,
+                    damping: 7,
+                    duration: 0.8,
+                  }}
                 >
                   <img src={img1} alt="" />
-                </div>
-                <div
+                </motion.div>
+
+                <motion.div
                   className="project-card"
                   onClick={() => handleSwap(img2, setImg2)}
+                  initial={{ x: 100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 90,
+                    damping: 7,
+                    duration: 0.8,
+                  }}
                 >
                   <img src={img2} alt="" />
-                </div>
+                </motion.div>
               </div>
               <div className="video-project d-flex justify-content-center ms-5 mt-5">
                 <iframe

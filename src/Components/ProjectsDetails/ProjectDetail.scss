@@ -32,29 +32,24 @@
   cursor: pointer;
 }
 
-.zoom-container {
-  position: relative;
-  display: inline-block;
-  width: fit-content;
+//BUTTON
+.project-detail button {
+  background-color: #ffe8e8;
+  color: $primary;
+  border-color: $primary;
+  font-size: larger;
+  border-radius: 50px;
+  padding-inline: 20px;
+  transition: transform 0.5s ease;
+}
+.project-detail button:hover {
+  background-color: #ffe8e8;
+  color: $primary;
+  border-color: $primary;
+  transform: scale(1.1);
 }
 
-.zoom-wrapper {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: background-size 0.3s ease;
-}
-
-.main-image {
-  display: block;
-  width: 100%;
-  height: 330px;
-  object-fit: contain;
-  opacity: 0; // nasconde l'immagine visiva, mostra solo lo sfondo zoomato
-  cursor: zoom-in; // lente classica
-}
-
-.zoom-container:hover .main-image {
-  opacity: 0; // garantisce che l'immagine sotto non venga mostrata
+//span
+.project-detail span {
+  color: $tertiary;
 }

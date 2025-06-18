@@ -40,13 +40,17 @@ const Websites = () => {
         </div>
         {/* CARDS */}
         <div className="d-flex justify-content-around align-items-center  pb-4 mt-2">
-          <Link to={"https://isolotto-del-pirgo.vercel.app/"}>
+          <a
+            href="https://isolotto-del-pirgo.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               className="card-site"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                type: "spring", // molla
+                type: "spring",
                 stiffness: 90,
                 damping: 7,
                 duration: 1,
@@ -55,8 +59,10 @@ const Websites = () => {
               <img src={Isolotto} alt="" />
               <div className="info">
                 <p className="m-2 fw-bold">Isolotto Del Pirgo</p>
-                <Link
-                  to={"https://github.com/Cristiano-Rocchi/isolotto-del-pirgo"}
+                <a
+                  href="https://github.com/Cristiano-Rocchi/isolotto-del-pirgo"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Button>
                     Git-Hub{" "}
@@ -64,12 +70,16 @@ const Websites = () => {
                       <img style={{ width: "25px" }} src={Arrow} alt="" />
                     </span>
                   </Button>
-                </Link>
+                </a>
               </div>
               <h5>VISITA IL SITO</h5>
             </motion.div>
-          </Link>
-          <Link to={"https://pizzamafia.vercel.app/"}>
+          </a>
+          <a
+            href="https://pizzamafia.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               className="card-site"
               initial={{ y: 100, opacity: 0 }}
@@ -86,10 +96,10 @@ const Websites = () => {
               <img src={PizzamafiaComics} alt="" />
               <div className="info">
                 <p className="m-2 fw-bold">Pizzamafia Comics</p>
-                <Link
-                  to={
-                    "https://github.com/Cristiano-Rocchi/pizzamafia-comics-site"
-                  }
+                <a
+                  href="https://github.com/Cristiano-Rocchi/pizzamafia-comics-site"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Button>
                     Git-Hub
@@ -97,11 +107,11 @@ const Websites = () => {
                       <img style={{ width: "25px" }} src={Arrow} alt="" />
                     </span>
                   </Button>
-                </Link>
+                </a>
               </div>
               <h5>VISITA IL SITO</h5>
             </motion.div>{" "}
-          </Link>
+          </a>
 
           <motion.div
             className="card-site unactive"

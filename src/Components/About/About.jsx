@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
+
 //svg
 import Arrow from "../../Assets/Svg/arrow.svg";
 import Me from "../../Assets/Img/About/me.jpg";
@@ -16,15 +18,24 @@ const About = () => {
             <Col xs={8}>
               <div className="title my-5">
                 {" "}
-                <h2>
+                <motion.h2
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                    delay: 0.3,
+                  }}
+                >
                   <span>Fullstack Web Developer</span> con esperienza in
                   sviluppo frontend e backend, maturata attraverso progetti
-                  intensivi individuali e di gruppo. <br />{" "}
+                  intensivi individuali e di gruppo. <br />
                   <span>Creo applicazioni web</span> performanti e scalabili,
                   con attenzione all’esperienza utente e alla qualità del
-                  codice. <br /> Lavoro con <span>passione</span>,{" "}
-                  <span>curiosità</span> e <span>concretezza</span>.
-                </h2>
+                  codice. <br />
+                  Lavoro con <span>passione</span>, <span>curiosità</span> e
+                  <span> concretezza</span>.
+                </motion.h2>
               </div>
               <div>
                 <Button>
@@ -32,7 +43,18 @@ const About = () => {
                 </Button>
               </div>
               <div className="description d-flex justify-content-center align-items-center">
-                <div className="w-75">
+                <motion.div
+                  className="w-75"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 1,
+                    duration: 0.8,
+                    type: "spring",
+                    stiffness: 60,
+                    damping: 8,
+                  }}
+                >
                   <p>
                     Appassionato di musica e cultura urbana, ho creato una
                     piattaforma per catalogare la street art. <br /> Mi alleno
@@ -41,8 +63,20 @@ const About = () => {
                     problemi reali. <br /> Sono diretto, collaborativo e amo il
                     codice chiaro, ma senza rinunciare alla creatività.
                   </p>
-                </div>
-                <div className="w-50">
+                </motion.div>
+
+                <motion.div
+                  className="w-50"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 1.3,
+                    duration: 0.8,
+                    type: "spring",
+                    stiffness: 60,
+                    damping: 8,
+                  }}
+                >
                   <h5>Competenze</h5>
                   <p>
                     <strong>Frontend:</strong> React, Redux, JavaScript (ES6+),
@@ -62,14 +96,22 @@ const About = () => {
                     Programming, Component-Based Architecture, API Integration,
                     Wireframing, Project Breakdown, Team collaboration
                   </p>
-                </div>
+                </motion.div>
               </div>
             </Col>
             <Col xs={4}>
-              <div className="me">
-                {" "}
+              <motion.div
+                className="me"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: 0.3,
+                }}
+              >
                 <img src={Me2} alt="" />
-              </div>
+              </motion.div>
             </Col>
           </Row>
         </Container>
