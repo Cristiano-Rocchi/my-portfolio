@@ -14,7 +14,7 @@ const Projects = () => {
     <div className="body projects">
       <Container fluid>
         <Row>
-          <Col xs={12} md={5}>
+          <Col xs={12} md={12} xl={5}>
             <motion.div
               className="d-flex align-items-center titles"
               initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ const Projects = () => {
           </Col>
 
           {/* Prima riga */}
-          <Col xs={12} md={7}>
+          <Col xs={12} md={12} xl={7}>
             <div className="d-flex justify-content-end gap-5 mt-5 flex-wrap">
               {firstTwo.map((project, index) => (
                 <motion.div

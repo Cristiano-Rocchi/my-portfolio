@@ -6,3 +6,12 @@
   height: 10vh;
   font-family: "Bricolage";
 }
+//MEDIA QUERIES
+@media (max-width: 768px) {
+  .my-nav h6 {
+    font-size: 0.6rem;
+  }
+  .my-nav h3 {
+    font-size: 1.3rem;
+  }
+}

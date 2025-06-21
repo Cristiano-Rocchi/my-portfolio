@@ -46,3 +46,93 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+
+//-----MEDIA QUERIES-----//
+// MOBILE
+@media (max-width: 768px) {
+  .landing img {
+    max-width: 100%;
+  }
+
+  .card-landing h4,
+  .about-card h4,
+  .contatti-card h4 {
+    font-size: 1.1rem;
+  }
+  .card-landing p,
+  .about-card p,
+  .contatti-card p {
+    font-size: 0.9rem;
+  }
+  .landing .flex-column {
+    margin-top: 1rem;
+  }
+
+  .landing .my-swiper {
+    display: none !important;
+  }
+  .landing .contatti-card .d-flex {
+    display: unset !important;
+  }
+  .landing .contatti-card img {
+    display: none;
+  }
+  .landing .contatti-card a img {
+    display: unset;
+  }
+  .landing .contatti-card a {
+    margin-right: 3px;
+  }
+}
+// TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+  .landing img {
+    max-width: 70%;
+  }
+  .card-landing h4,
+  .about-card h4,
+  .contatti-card h4 {
+    font-size: 1.2rem;
+  }
+  .card-landing p,
+  .about-card p,
+  .contatti-card p {
+    font-size: 0.9rem;
+  }
+
+  .landing .contatti-card .d-flex {
+    display: unset !important;
+  }
+  .landing .contatti-card img {
+    display: none;
+  }
+  .landing .contatti-card a img {
+    display: unset;
+  }
+  .landing .contatti-card a {
+    margin-right: 3px;
+  }
+}
+// MONITOR
+@media (min-width: 1025px) {
+  .card-landing h4,
+  .about-card h4,
+  .contatti-card h4 {
+    font-size: 1.9rem;
+  }
+  .card-landing p,
+  .about-card p,
+  .contatti-card p {
+    font-size: 1.3rem;
+  }
+  .landing .contatti-card a img {
+    width: 50px;
+  }
+  .landing .contatti-card button {
+    font-size: 1.5rem;
+  }
+  .landing .contatti-card,
+  .landing .about-card {
+    margin-top: 50px;
+  }
+}
