@@ -6,9 +6,9 @@ import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 //img siti
-import PizzamafiaComics from "../../Assets/Img/Websites/Siti/pizzamafiaComics.png";
-import Isolotto from "../../Assets/Img/Websites/Siti/isolotto.png";
-import Graffiti from "../../Assets/Img/Websites/Siti/graffitibench.png";
+import PizzamafiaComics from "../../Assets/Img/Websites/Siti/pizzamafiaComics.webp";
+import Isolotto from "../../Assets/Img/Websites/Siti/isolotto.webp";
+import Graffiti from "../../Assets/Img/Websites/Siti/graffitibench.webp";
 import { Link } from "react-router-dom";
 //loghi
 import Arrow from "../../Assets/Svg/arrow.svg";

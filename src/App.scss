@@ -16,9 +16,43 @@ a {
   src: url("./Assets/Font/BricolageGrotesque.ttf") format("truetype");
 }
 
+//BUTTON
+.button-custom {
+  background-color: #ffe8e8;
+  color: $primary;
+  border-color: $primary;
+  font-size: larger;
+  border-radius: 50px;
+  padding-inline: 20px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    background-color: #ffe8e8;
+    color: $primary;
+    border-color: $primary;
+    transform: scale(1.1);
+  }
+
+  &:focus,
+  &:active,
+  &.active,
+  &:focus-visible {
+    background-color: #ffe8e8 !important;
+    color: $primary !important;
+    border-color: $primary !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
 //SPAN
 .span-custom {
   color: $tertiary !important;
   font-weight: bold;
   filter: brightness(0.8);
+}
+.link-underline {
+  text-decoration: underline;
+  font-weight: normal;
+  text-decoration-color: $tertiary !important;
 }

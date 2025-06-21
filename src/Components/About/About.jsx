@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 //svg
 import Arrow from "../../Assets/Svg/arrow.svg";
-import Me from "../../Assets/Img/About/me.jpg";
+
 import Me2 from "../../Assets/Svg/Me.svg";
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
                 </motion.h2>
               </div>
               <div>
-                <Button>
+                <Button className="button-custom">
                   Curriculum <img className="ms-2 mb-1" src={Arrow} alt="" />
                 </Button>
               </div>

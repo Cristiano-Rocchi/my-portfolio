@@ -3,36 +3,36 @@ import "./Landing.scss";
 import "../../App.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import HomeImg from "../../Assets/Svg/Landing-img.svg";
-import ContactImg from "../../Assets/Img/Home/contactImg.png";
+import ContactImg from "../../Assets/Img/Home/contactImg.webp";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, FreeMode } from "swiper/modules";
 // Loghi
-import html5 from "../../Assets/Img/Loghi/html5.png";
-import css3 from "../../Assets/Img/Loghi/css3.png";
-import js from "../../Assets/Img/Loghi/js.png";
-import ts from "../../Assets/Img/Loghi/ts.png";
-import Rct from "../../Assets/Img/Loghi/react.png";
-import Redux from "../../Assets/Img/Loghi/redux.png";
-import Sass from "../../Assets/Img/Loghi/sass.png";
-import Java from "../../Assets/Img/Loghi/java.png";
-import Spring from "../../Assets/Img/Loghi/spring.png";
-import Maven from "../../Assets/Img/Loghi/maven.png";
-import Pg from "../../Assets/Img/Loghi/pg.png";
-import Github from "../../Assets/Img/Loghi/github.png";
-import Git from "../../Assets/Img/Loghi/git.png";
-import Jest from "../../Assets/Img/Loghi/jest.png";
-import jwt from "../../Assets/Img/Loghi/jwt.png";
-import Bstrap from "../../Assets/Img/Loghi/bootstrap.png";
-import Hibernate from "../../Assets/Img/Loghi/hibernate.png";
-import Cloudinary from "../../Assets/Img/Loghi/cloudinary.png";
-import Backblaze from "../../Assets/Img/Loghi/backblaze.png";
-import Njs from "../../Assets/Img/Loghi/njs.png";
-import ReactRouter from "../../Assets/Img/Loghi/react-router.png";
-import Netlify from "../../Assets/Img/Loghi/netlify.png";
-import Vercel from "../../Assets/Img/Loghi/vercel.png";
-import Figma from "../../Assets/Img/Loghi/figma.png";
+import html5 from "../../Assets/Svg/loghi/html5.svg";
+import css3 from "../../Assets/Svg/loghi/css3.svg";
+import js from "../../Assets/Svg/loghi/js.svg";
+import ts from "../../Assets/Svg/loghi/ts.svg";
+import Rct from "../../Assets/Svg/loghi/react.svg";
+import Redux from "../../Assets/Svg/loghi/redux.svg";
+import Sass from "../../Assets/Svg/loghi/sass.svg";
+import Java from "../../Assets/Svg/loghi/java.svg";
+import Spring from "../../Assets/Svg/loghi/spring.svg";
+import Maven from "../../Assets/Svg/loghi/maven.svg";
+import Pg from "../../Assets/Svg/loghi/pg.svg";
+import Github from "../../Assets/Svg/loghi/github.svg";
+import Git from "../../Assets/Svg/loghi/git.svg";
+import Jest from "../../Assets/Svg/loghi/jest.svg";
+import jwt from "../../Assets/Svg/loghi/jwt.svg";
+import Bstrap from "../../Assets/Svg/loghi/bootstrap.svg";
+import Hibernate from "../../Assets/Svg/loghi/hibernate.svg";
+import Cloudinary from "../../Assets/Svg/loghi/cloudinary.svg";
+import Backblaze from "../../Assets/Svg/loghi/backblaze.svg";
+import Njs from "../../Assets/Svg/loghi/njs.svg";
+import ReactRouter from "../../Assets/Svg/loghi/react-router.svg";
+import Netlify from "../../Assets/Svg/loghi/netlify.svg";
+import Vercel from "../../Assets/Svg/loghi/vercel.svg";
+import Figma from "../../Assets/Svg/loghi/figma.svg";
 //svg
 import In from "../../Assets/Svg/in.svg";
 import Phone from "../../Assets/Svg/phone.svg";
@@ -192,7 +192,7 @@ const Landing = () => {
                     <h4 className="fw-bold mb-4">CONTATTI</h4>
                     <div className="d-flex gap-4">
                       <a href="mailto:cri.wklavoro@libero.it">
-                        <Button>
+                        <Button className="button-custom">
                           Posta Elettronica
                           <img className="ms-2 mb-1" src={Arrow} alt="" />
                         </Button>

@@ -1,53 +1,60 @@
 //graffiti
-import Graffiti from "../../Assets/Img/Websites/Siti/graffitibench.png";
-import graffiti1 from "../../Assets/materiale/graffiti/1.png";
-import graffiti2 from "../../Assets/materiale/graffiti/2.png";
+import Graffiti from "../../Assets/Img/Websites/Siti/graffitibench.webp";
+import graffiti1 from "../../Assets/Img/Projects/graffiti/1.webp";
+import graffiti2 from "../../Assets/Img/Projects/graffiti/2.webp";
 
 //RADIO
-import Radio from "../../Assets/materiale/radio/cover.png";
-import radio1 from "../../Assets/materiale/radio/1.png";
-import radio2 from "../../Assets/materiale/radio/2.png";
+import Radio from "../../Assets/Img/Projects/radio/cover.webp";
+import radio1 from "../../Assets/Img/Projects/radio/1.webp";
+import radio2 from "../../Assets/Img/Projects/radio/2.webp";
 
 //EPIC ENERGY
-import EpicEnergy from "../../Assets/materiale/epicenergy/cover.png";
-import epic1 from "../../Assets/materiale/epicenergy/1.png";
-import epic2 from "../../Assets/materiale/epicenergy/2.png";
+import EpicEnergy from "../../Assets/Img/Projects/epicenergy/cover.webp";
+import epic1 from "../../Assets/Img/Projects/epicenergy/1.webp";
+import epic2 from "../../Assets/Img/Projects/epicenergy/2.webp";
 
 //TRASPORTO PUBBLICO
-import Trasporto from "../../Assets/materiale/trasporto/cover.png";
-import trasporto1 from "../../Assets/materiale/trasporto/1.png";
-import trasporto2 from "../../Assets/materiale/trasporto/2.png";
+import Trasporto from "../../Assets/Img/Projects/trasporto/cover.webp";
+import trasporto1 from "../../Assets/Img/Projects/trasporto/1.webp";
+import trasporto2 from "../../Assets/Img/Projects/trasporto/2.webp";
 
 //LINKEDIN
-import Linkedin from "../../Assets/materiale/linkedin/cover.png";
-import linkedin1 from "../../Assets/materiale/linkedin/1.png";
-import linkedin2 from "../../Assets/materiale/linkedin/2.png";
+import Linkedin from "../../Assets/Img/Projects/linkedin/cover.webp";
+import linkedin1 from "../../Assets/Img/Projects/linkedin/1.webp";
+import linkedin2 from "../../Assets/Img/Projects/linkedin/2.webp";
+
 //spotify
-import Spotify from "../../Assets/materiale/spotify/cover.png";
-import spotify1 from "../../Assets/materiale/spotify/1.png";
-import spotify2 from "../../Assets/materiale/spotify/2.png";
+import Spotify from "../../Assets/Img/Projects/spotify/cover.webp";
+import spotify1 from "../../Assets/Img/Projects/spotify/1.webp";
+import spotify2 from "../../Assets/Img/Projects/spotify/2.webp";
 //QUIZ
-import Quiz from "../../Assets/materiale/quiz/cover.png";
-import quiz1 from "../../Assets/materiale/quiz/1.png";
-import quiz2 from "../../Assets/materiale/quiz/2.png";
+import Quiz from "../../Assets/Img/Projects/quiz/cover.webp";
+import quiz1 from "../../Assets/Img/Projects/quiz/1.webp";
+import quiz2 from "../../Assets/Img/Projects/quiz/2.webp";
 //Gestione Viaggi
-import GestioneViaggi from "../../Assets/materiale/gestione-viaggi/cover.png";
-import gestioneViaggi1 from "../../Assets/materiale/gestione-viaggi/1.png";
-import gestioneViaggi2 from "../../Assets/materiale/gestione-viaggi/2.png";
+import GestioneViaggi from "../../Assets/Img/Projects/gestione-viaggi/cover.webp";
+import gestioneViaggi1 from "../../Assets/Img/Projects/gestione-viaggi/1.webp";
+import gestioneViaggi2 from "../../Assets/Img/Projects/gestione-viaggi/2.webp";
 
 //GESTIONE PRENOTAZIONE
-import GestionePrenotazione from "../../Assets/materiale/gestione-prenotazioni/cover.png";
-import gestionePrenotazione1 from "../../Assets/materiale/gestione-prenotazioni/1.png";
-import gestionePrenotazione2 from "../../Assets/materiale/gestione-prenotazioni/2.png";
+import GestionePrenotazione from "../../Assets/Img/Projects/gestione-prenotazioni/cover.webp";
+import gestionePrenotazione1 from "../../Assets/Img/Projects/gestione-prenotazioni/1.webp";
+import gestionePrenotazione2 from "../../Assets/Img/Projects/gestione-prenotazioni/2.webp";
 
 //METEO
-import Meteo from "../../Assets/materiale/meteo/cover.png";
-import meteo1 from "../../Assets/materiale/meteo/1.png";
-import meteo2 from "../../Assets/materiale/meteo/2.png";
+import Meteo from "../../Assets/Img/Projects/meteo/cover.webp";
+import meteo1 from "../../Assets/Img/Projects/meteo/1.webp";
+import meteo2 from "../../Assets/Img/Projects/meteo/2.webp";
 
 //NETFLIX
-import Netflix from "../../Assets/materiale/netflix/cover.png";
-import netflix1 from "../../Assets/materiale/netflix/1.png";
+import Netflix from "../../Assets/Img/Projects/netflix/cover.webp";
+import netflix1 from "../../Assets/Img/Projects/netflix/1.webp";
+import netflix2 from "../../Assets/Img/Projects/netflix/2.webp";
+
+//NPM
+import Npm from "../../Assets/Img/Projects/npm/cover.webp";
+import npm1 from "../../Assets/Img/Projects/npm/1.webp";
+import npm2 from "../../Assets/Img/Projects/npm/2.webp";
 
 const DataProjects = [
   //----CAPSTONE----
@@ -81,6 +88,8 @@ const DataProjects = [
 
     img1: graffiti1,
     img2: graffiti2,
+    videoUrl:
+      "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoGraf_glmymw.mp4",
   },
   //---RADIO---
 
@@ -105,17 +114,36 @@ const DataProjects = [
 
     img1: radio1,
     img2: radio2,
+    videoUrl:
+      "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoRadio_fa2dy7.mp4",
   },
   //----NPM----
 
   {
     id: "Npm-packages",
     titolo: "NPM packages",
-    copertina: "",
+    copertina: Npm,
     descrizioneBreve:
-      "Tre pacchetti npm con oltre 3.000 download complessivi, dedicati a videoplayer customizzabili per React e web: Kunstom Player supporta video locali, sorgenti YouTube e tracce multiple audio, offrendo un'esperienza flessibile e facilmente integrabile in qualsiasi progetto frontend.",
-    descrizioneLunga:
-      "La famiglia di pacchetti Kunstom Player, composta da tre moduli pubblicati su npm con oltre 3.000 download complessivi, nasce per offrire una soluzione moderna, personalizzabile e modulare per la gestione di contenuti video sul web.  player-video-kunstom: versione base, leggera e semplice da integrare, pensata per chi vuole un videoplayer pulito e funzionale con API essenziali. player-video-kunstom-pro: versione avanzata con supporto a tracce audio multiple, gestione eventi dettagliata e interfaccia personalizzabile, ideale per progetti più strutturati. player-video-kunstom-youtube: pensato per integrare in modo coerente i video di YouTube, mantenendo la stessa UX degli altri player della suite. Tutti i pacchetti sono scritti in JavaScript, facilmente integrabili in ambienti React, Vue o Vanilla, con supporto a controlli dinamici, eventi custom, caricamento asincrono e UI componibile. Kunstom Player è una soluzione flessibile e già adottata da diversi progetti web per offrire un’esperienza video coerente, performante e personalizzata.",
+      "Tre pacchetti npm con oltre 1.000 download complessivi, dedicati a videoplayer customizzabili per React e web: Kunstom Player supporta video locali, sorgenti YouTube e tracce multiple audio, offrendo un'esperienza flessibile e facilmente integrabile in qualsiasi progetto frontend.",
+    descrizioneLunga: `
+  La famiglia di pacchetti <span class="span-custom">Kunstom Player</span>, pubblicati su npm con oltre 1.000 download complessivi, nasce per offrire una soluzione moderna, personalizzabile e modulare per la gestione di contenuti video sul web.<br/><br/>
+
+  
+  <span class="span-custom">I tre moduli principali:</span><br/><br/>
+  • <span class="span-custom"> <strong>VERSIONE BASE</strong>: </span> versione base, leggera e facile da integrare, con API essenziali e UI minimale; <br/> -puoi trovarlo qui: <span class="span-custom"><a class="link-underline" href="https://www.npmjs.com/package/player-video-kunstom" target="_blank">npm player-video-kunstom</a></span><br/> <br/>
+ <span class="span-custom"><strong>VERSIONE PRO</strong>:</span> versione avanzata basata su Video.js, con supporto a più qualità video, miniplayer, interfaccia configurabile e numerose props extra;<br/>- puoi trovarlo qui: <span class="span-custom"><a class="link-underline" href="https://www.npmjs.com/package/player-video-kunstom-pro" target="_blank">npm player-video-kunstom-pro</a></span><br/><br/>
+
+  •<span class="span-custom"><strong>VERSIONE YOUTUBE</strong>:</span> ispirato al design del player YouTube, con attenzione ai dettagli grafici, supporto multilingua e funzionalità avanzate come miniplayer, cinema mode e autoplay;<br/>
+-puoi trovarlo qui: <span class="span-custom"><a class="link-underline" href="https://www.npmjs.com/package/player-video-kunstom-youtube" target="_blank">npm player-video-kunstom-youtube</a></span><br/><br/>
+
+
+  <span class="span-custom">Tutti i pacchetti sono sviluppati in JavaScript</span> e facilmente integrabili in progetti React, Vue o Vanilla JS, con supporto a controlli dinamici, caricamento asincrono ed eventi personalizzati.<br/><br/>
+
+  <span class="span-custom">Kunstom Player</span> è pensato per offrire un'esperienza video flessibile, coerente e performante, già adottata in diversi progetti per gestire contenuti multimediali in modo professionale.
+`,
+
+    img1: npm1,
+    img2: npm2,
   },
 
   //----EPICENERGY----
@@ -186,6 +214,8 @@ const DataProjects = [
 
     img1: linkedin1,
     img2: linkedin2,
+    videoUrl:
+      "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoLinkd_aix3sk.mp4",
   },
 
   //-----SPOTIFY CLONE-----
@@ -209,6 +239,8 @@ const DataProjects = [
 
     img1: spotify1,
     img2: spotify2,
+    videoUrl:
+      "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoSpoty_ney75y.mp4",
   },
 
   //------QUIZ-----
@@ -238,6 +270,8 @@ const DataProjects = [
 
     img1: quiz1,
     img2: quiz2,
+    videoUrl:
+      "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoQuiz_cyhxzc.mp4",
   },
 
   //------GESTIONE VIAGGI-----
@@ -315,18 +349,21 @@ const DataProjects = [
     descrizioneBreve:
       "Replica front-end della UI di Netflix, realizzata con HTML, CSS e Bootstrap. Il progetto riproduce fedelmente homepage, profilo utente e impostazioni, con particolare attenzione a griglie, allineamenti, componenti riutilizzabili e design responsive.",
     descrizioneLunga: `
-  <span class="span-custom">Netflix Clone</span> è un progetto front-end sviluppato in autonomia per replicare l'interfaccia grafica della piattaforma Netflix, utilizzando <span class="span-custom">HTML5, CSS3</span> e il framework <span class="span-custom">Bootstrap 5</span>.<br/><br/>
-  L’obiettivo era ottenere un’interfaccia <span class="span-custom">responsive</span> e visivamente fedele al modello fornito.<br/><br/>
-  Sono state implementate:<br/>
-  • Homepage con navbar, sezioni filtrate, griglie di film e footer;<br/>
-  • Profile page con avatar utente, sezioni informative e azioni;<br/>
-  • Settings page opzionale;<br/>
-  • Griglie responsive basate su sistema Bootstrap, con attenzione a gutter, allineamenti, e struttura a componenti;<br/>
-  • Opzionalmente, integrazione di caroselli e animazioni.<br/><br/>
-  Il layout è stato costruito partendo da uno <span class="span-custom">studio dei mockup</span> e organizzato per riutilizzare il più possibile classi e strutture, con attenzione all’<span class="span-custom">accessibilità</span> e alla <span class="span-custom">modularità del codice</span>.
+<span class="span-custom">Netflix Clone</span> è un progetto front-end sviluppato in autonomia per replicare l'interfaccia grafica della piattaforma Netflix, utilizzando <span class="span-custom">HTML5, SCSS/CSS3</span> e il framework <span class="span-custom">Bootstrap 5</span>.<br/><br/>
+L’obiettivo era ottenere un’interfaccia <span class="span-custom">responsive</span> e visivamente fedele al modello fornito.<br/><br/>
+Sono state implementate:<br/>
+• Homepage con navbar, sezioni filtrate, griglie di film e footer;<br/>
+• Profile page con avatar utente, sezioni informative e azioni;<br/>
+• Settings page opzionale;<br/>
+• Griglie responsive basate su sistema Bootstrap, con attenzione a gutter, allineamenti e struttura a componenti;<br/>
+• Codice <span class="span-custom">SCSS modulare</span> per una gestione avanzata degli stili, con utilizzo di variabili, mixin e partials;<br/>
+• Opzionalmente, integrazione di caroselli e animazioni.<br/><br/>
+Il layout è stato costruito partendo da uno <span class="span-custom">studio dei mockup</span> e organizzato per riutilizzare il più possibile classi e strutture, con attenzione all’<span class="span-custom">accessibilità</span> e alla <span class="span-custom">manutenibilità del codice</span>.
+
 `,
 
     img1: netflix1,
+    img2: netflix2,
   },
 ];
 

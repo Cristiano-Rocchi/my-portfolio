@@ -75,7 +75,7 @@ function ProjectDetail() {
           </Row>
           <Row>
             <Col xs={12} md={5}>
-              <div className="description">
+              <div className="description mb-5">
                 <div
                   style={{ whiteSpace: "normal" }}
                   dangerouslySetInnerHTML={{ __html: project.descrizioneLunga }}
@@ -114,18 +114,25 @@ function ProjectDetail() {
                   <img src={img2} alt="" />
                 </motion.div>
               </div>
-              <div className="video-project d-flex justify-content-center ms-5 mt-5">
-                <iframe
-                  width="75%"
-                  height="300"
-                  src="https://www.youtube.com/embed/cYJkoWkW_7Q"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </Col>{" "}
+              {project.videoUrl && (
+                <motion.div
+                  className="video-project d-flex justify-content-center ms-5 my-5"
+                  initial={{ x: 100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 90,
+                    damping: 7,
+                    duration: 0.8,
+                  }}
+                >
+                  <video controls width="100%">
+                    <source src={project.videoUrl} type="video/mp4" />
+                    Il tuo browser non supporta il video.
+                  </video>
+                </motion.div>
+              )}
+            </Col>
           </Row>
         </Container>
       </div>
