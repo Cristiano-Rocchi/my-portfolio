@@ -39,7 +39,7 @@ const Websites = () => {
           />
         </div>
         {/* CARDS */}
-        <div className="d-flex justify-content-around align-items-center  pb-4 mt-2">
+        <div className="d-flex justify-content-around align-items-center cards  pb-4 mt-2">
           <a
             href="https://isolotto-del-pirgo.vercel.app/"
             target="_blank"

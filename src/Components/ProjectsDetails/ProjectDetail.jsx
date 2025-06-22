@@ -13,13 +13,12 @@ function ProjectDetail() {
   const [copertina, setCopertina] = useState(project?.copertina);
   const [img1, setImg1] = useState(project?.img1);
   const [img2, setImg2] = useState(project?.img2);
+  const isMobile = window.innerWidth < 768;
 
   //funzioni
   // Funzione per lo scambio tra copertina e immagine secondaria
   const handleSwap = (img, setImg) => {
     if (img === copertina) return;
-
-    // Scambio
     const temp = copertina;
     setCopertina(img);
     setImg(temp);
@@ -34,7 +33,7 @@ function ProjectDetail() {
       <div className="body project-detail">
         <Container fluid>
           <Row>
-            <Col xs={12} md={5}>
+            <Col xs={12} lg={5}>
               {" "}
               <div className="d-flex align-items-center justify-content-start title ms-5">
                 <div className="d-flex flex-column">
@@ -45,7 +44,7 @@ function ProjectDetail() {
                 <img src={Mouse} alt="" />
               </div>
             </Col>
-            <Col xs={12} md={7}>
+            <Col xs={12} lg={7}>
               <motion.div
                 className="d-flex justify-content-end cover"
                 initial={{ y: -100, opacity: 0 }}
@@ -74,7 +73,7 @@ function ProjectDetail() {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={5}>
+            <Col xs={12} lg={5}>
               <div className="description mb-5">
                 <div
                   style={{ whiteSpace: "normal" }}
@@ -82,11 +81,13 @@ function ProjectDetail() {
                 ></div>
               </div>
             </Col>
-            <Col md={7}>
-              <div className="d-flex justify-content-end mt-5">
+            <Col xs={12} lg={7}>
+              <div className="d-flex justify-content-end mt-5 images">
                 <motion.div
                   className="project-card w-50"
-                  onClick={() => handleSwap(img1, setImg1)}
+                  onClick={() => {
+                    if (!isMobile) handleSwap(img1, setImg1);
+                  }}
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{
@@ -101,7 +102,9 @@ function ProjectDetail() {
 
                 <motion.div
                   className="project-card"
-                  onClick={() => handleSwap(img2, setImg2)}
+                  onClick={() => {
+                    if (!isMobile) handleSwap(img2, setImg2);
+                  }}
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{

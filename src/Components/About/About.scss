@@ -5,7 +5,7 @@
   color: $primary;
 }
 
-//titols
+//titls
 .about .title h2 {
   letter-spacing: 1px;
   filter: brightness(0.9);
@@ -32,4 +32,53 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(0.9);
+}
+
+//---MEDIA QUERIES---
+//Mobile
+@media (max-width: 768px) {
+  .about .title h2 {
+    font-size: 1.1rem;
+  }
+  .about button {
+    margin-bottom: 30px;
+  }
+  .about .description {
+    display: unset !important;
+  }
+  .about .description .w-75 {
+    width: 100% !important;
+  }
+  .about .me {
+    width: 50%;
+    height: 300px;
+  }
+}
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about .me img {
+    width: unset;
+    height: 300px;
+  }
+  .about .me {
+    height: unset;
+    order: 0 !important;
+  }
+}
+
+//Desktop
+@media (min-width: 1600px) {
+  .about .title h2 {
+    font-size: 2.3rem;
+  }
+  .about button {
+    font-size: 1.7rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+  }
+  .about h5 {
+    margin-left: 10px;
+  }
 }

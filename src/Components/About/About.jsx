@@ -15,7 +15,7 @@ const About = () => {
         {" "}
         <Container fluid>
           <Row>
-            <Col xs={8}>
+            <Col xs={12} lg={8}>
               <div className="title my-5">
                 {" "}
                 <motion.h2
@@ -77,7 +77,9 @@ const About = () => {
                     damping: 8,
                   }}
                 >
-                  <h5>Competenze</h5>
+                  <strong>
+                    <h5>Competenze:</h5>
+                  </strong>
                   <p>
                     <strong>Frontend:</strong> React, Redux, JavaScript (ES6+),
                     HTML5, CSS3, Bootstrap, Sass, Responsive Design, Web
@@ -99,7 +101,7 @@ const About = () => {
                 </motion.div>
               </div>
             </Col>
-            <Col xs={4}>
+            <Col xs={12} lg={4}>
               <motion.div
                 className="me"
                 initial={{ opacity: 0, x: 50 }}

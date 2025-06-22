@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <div className="body not-found">
-      <div className="d-flex justify-content-center align-items-center gap-5">
+      <div className="d-flex justify-content-center align-items-center gap-5 ">
         {" "}
         <img src={NotFoundImage} alt="NOT FOUND" />
         <div className="title">

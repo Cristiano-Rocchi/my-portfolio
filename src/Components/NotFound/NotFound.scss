@@ -7,3 +7,15 @@
 .not-found img {
   width: 430px;
 }
+//---MEDIA QUERIES---
+//Mobile
+@media (max-width: 768px) {
+  .not-found img {
+    width: 280px;
+  }
+
+  .not-found .d-flex {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+}
