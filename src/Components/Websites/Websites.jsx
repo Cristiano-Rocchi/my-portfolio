@@ -26,8 +26,8 @@ const Websites = () => {
           >
             <h1>SITI CHE GESTISCO!</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Similique esse quis,
+              Dallo sviluppo alla pubblicazione: qui trovi siti online curati da
+              me.
             </p>
           </motion.div>
           <motion.img

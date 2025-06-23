@@ -69,8 +69,8 @@ const Landing = () => {
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus officia pariatur quam architecto obcaecati
+                    Sviluppati da zero e oggi online: ecco i progetti reali che
+                    curo personalmente.
                   </p>
                 </div>
               </Link>
@@ -84,8 +84,8 @@ const Landing = () => {
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus officia pariatur quam architecto obcaecati
+                    Una selezione di lavori personali e accademici che
+                    raccontano il mio percorso.
                   </p>
                 </div>
               </Link>
@@ -229,9 +229,8 @@ const Landing = () => {
                   </div>
 
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus officia pariatur quam architecto obcaecati, cumque
-                    voluptatibus,
+                    Una panoramica su competenze, strumenti, metodo di lavoro e
+                    background.
                   </p>
                 </div>
               </Link>

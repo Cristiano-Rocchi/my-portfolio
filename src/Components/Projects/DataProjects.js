@@ -90,6 +90,8 @@ const DataProjects = [
     img2: graffiti2,
     videoUrl:
       "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoGraf_glmymw.mp4",
+    github1: "https://github.com/Cristiano-Rocchi/graffitiplatform",
+    github2: "https://github.com/Cristiano-Rocchi/frontendgraffiti",
   },
   //---RADIO---
 
@@ -116,6 +118,8 @@ const DataProjects = [
     img2: radio2,
     videoUrl:
       "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoRadio_fa2dy7.mp4",
+    github1: "https://github.com/Cristiano-Rocchi/radio_backend",
+    github2: "https://github.com/Cristiano-Rocchi/radio_frontend",
   },
   //----NPM----
 
@@ -144,6 +148,7 @@ const DataProjects = [
 
     img1: npm1,
     img2: npm2,
+    github1: "https://github.com/Cristiano-Rocchi/player-video-kunstom-pro",
   },
 
   //----EPICENERGY----
@@ -169,6 +174,7 @@ const DataProjects = [
 
     img1: epic1,
     img2: epic2,
+    github1: "https://github.com/Edyan90/epicenergy/tree/Cristiano",
   },
   //-----TRASPORTO PUBBLICO
   {
@@ -191,6 +197,7 @@ const DataProjects = [
 
     img1: trasporto1,
     img2: trasporto2,
+    github1: "https://github.com/Cecchy2/buildweek_atac_jpa",
   },
   //-----LINKEDIN CLONE------
   {
@@ -216,6 +223,7 @@ const DataProjects = [
     img2: linkedin2,
     videoUrl:
       "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoLinkd_aix3sk.mp4",
+    github1: "https://github.com/bertcoscia/Epicode-W12BW3",
   },
 
   //-----SPOTIFY CLONE-----
@@ -241,6 +249,7 @@ const DataProjects = [
     img2: spotify2,
     videoUrl:
       "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoSpoty_ney75y.mp4",
+    github1: "https://github.com/C043/BW2-Spotify-Clone",
   },
 
   //------QUIZ-----
@@ -272,6 +281,7 @@ const DataProjects = [
     img2: quiz2,
     videoUrl:
       "https://res.cloudinary.com/ddcmcwpr0/video/upload/videoQuiz_cyhxzc.mp4",
+    github1: "https://github.com/Cecchy2/Bw-1",
   },
 
   //------GESTIONE VIAGGI-----
@@ -295,6 +305,7 @@ const DataProjects = [
 
     img1: gestioneViaggi1,
     img2: gestioneViaggi2,
+    github1: "https://github.com/Cristiano-Rocchi/gestioneviaggi",
   },
   //--------GESTIONE PRENOTAZIONI------
   {
@@ -317,6 +328,7 @@ const DataProjects = [
 
     img1: gestionePrenotazione1,
     img2: gestionePrenotazione2,
+    github1: "https://github.com/Cristiano-Rocchi/gestioneprenotazioni",
   },
 
   //-----APP METEO---
@@ -339,6 +351,7 @@ const DataProjects = [
 
     img1: meteo1,
     img2: meteo2,
+    github1: "https://github.com/Cristiano-Rocchi/progetto-settimana-2",
   },
 
   //------NETFLIX CLONE------
@@ -364,6 +377,7 @@ Il layout è stato costruito partendo da uno <span class="span-custom">studio de
 
     img1: netflix1,
     img2: netflix2,
+    github1: "https://github.com/Cristiano-Rocchi/progetto-settimana-6",
   },
 ];
 

@@ -5,6 +5,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import "./ProjectDetail.scss";
 import Mouse from "../../Assets/Svg/mouse.svg";
 import { motion } from "framer-motion";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -38,7 +40,47 @@ function ProjectDetail() {
               <div className="d-flex align-items-center justify-content-start title ms-5">
                 <div className="d-flex flex-column">
                   <h1 className="mt-5">{project.titolo}</h1>
-                  <Button className="mt-5">Git-Hub</Button>
+                  {project.github2 ? (
+                    <Tippy
+                      content={
+                        <div className="d-flex flex-column">
+                          <a
+                            href={project.github1}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button-custom"
+                          >
+                            GitHub Backend
+                          </a>
+                          <a
+                            href={project.github2}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button-custom mt-3"
+                          >
+                            GitHub Frontend
+                          </a>
+                        </div>
+                      }
+                      interactive={true}
+                      placement="right"
+                      arrow={true}
+                      trigger="click"
+                      hideOnClick={true}
+                      className="custom-tippy"
+                    >
+                      <Button className="mt-5 button-custom">Git-Hub</Button>
+                    </Tippy>
+                  ) : (
+                    <a
+                      href={project.github1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none"
+                    >
+                      <Button className="mt-5">Git-Hub</Button>
+                    </a>
+                  )}
                 </div>
 
                 <img src={Mouse} alt="" />
