@@ -38,9 +38,15 @@ const About = () => {
                 </motion.h2>
               </div>
               <div>
-                <Button className="button-custom">
+                <a
+                  href="/Curriculum.pdf"
+                  download
+                  className="btn button-custom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Curriculum <img className="ms-2 mb-1" src={Arrow} alt="" />
-                </Button>
+                </a>
               </div>
               <div className="description d-flex justify-content-center align-items-center">
                 <motion.div
